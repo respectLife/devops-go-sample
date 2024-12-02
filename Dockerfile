@@ -1,5 +1,5 @@
 # Build the manager binary
-FROM $REGISTRY/$HARBOR_NAMESPACE/golang:1.23 as builder
+FROM golang:1.23 as builder
 
 WORKDIR /devops
 
