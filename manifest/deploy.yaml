@@ -6,7 +6,7 @@ metadata:
   labels:
     app: devops-go-sample
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: devops-go-sample
@@ -17,4 +17,4 @@ spec:
     spec:
       containers:
       - name: go
-        image: $REGISTRY/$DOCKERHUB_USERNAME/$APP_NAME
+        image: $REGISTRY/$HARBOR_NAMESPACE/$APP_NAME
